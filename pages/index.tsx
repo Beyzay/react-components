@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/NavBar";
 import Toggle from "../components/Toggle";
 import Counter from "../components/Counter";
+import Contact from "../components/Contact";
 
 export default function Home() {
   // Initialize Variables for props
@@ -21,6 +22,12 @@ export default function Home() {
       
       {/* Counter Component */}
       <Counter title={titleVar}/>
+      <br/>
+
+      {/* Contact Component */}
+      <div id="contact">
+        <Contact />
+      </div>
       <br/>
 
     </div>
