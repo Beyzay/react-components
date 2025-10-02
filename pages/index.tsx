@@ -17,31 +17,28 @@ export default function Home() {
       <div id="navbar">
         <NavBar />
       </div>
-      <br/>
 
-      {/* WelcomeHome Component */}
-      <div id="home">
-        <WelcomeHome />
-      </div>
-      <br/>
+      <main style={{ padding: "1.5rem" }}>
+        {/* WelcomeHome Component */}
+        <div id="home" style={{ marginBottom: "3rem" }}>
+          <WelcomeHome />
+        </div>
 
-      {/* Toggle Component */}
-      <div id="toggle">
-        <Toggle message={messageVar} />
-      </div>
-      <br/>
-      
-      {/* Counter Component */}
-      <div id="counter">
-        <Counter title={titleVar}/>
-      </div>
-      <br/>
+        {/* Toggle Component */}
+        <div id="toggle" style={{ marginBottom: "3rem" }}>
+          <Toggle message={messageVar} />
+        </div>
+        
+        {/* Counter Component */}
+        <div id="counter" style={{ marginBottom: "3rem" }}>
+          <Counter title={titleVar}/>
+        </div>
 
-      {/* Contact Component */}
-      <div id="contact">
-        <Contact />
-      </div>
-      <br/>
+        {/* Contact Component */}
+        <div id="contact" style={{ marginBottom: "3rem" }}>
+          <Contact />
+        </div>
+      </main>
 
     </div>
   )
