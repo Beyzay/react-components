@@ -7,6 +7,8 @@ type ToggleProps = {
 }
 
 export default function Toggle({ message }: ToggleProps) {
+
+    // Initialize the "isVisible" state to false
     const [isVisible, setIsVisible] = useState(false);
 
     return (
@@ -14,7 +16,7 @@ export default function Toggle({ message }: ToggleProps) {
             <div className={styles.flexContainer}>
 
                 {/* Attach onClick event handler to the button element 
-                to toggle the button name and message visibility */}
+                to update the "isVisible" state for toggling the button name and message visibility */}
                 <button
                     className={styles.button}
                     onClick={() => setIsVisible(!isVisible)}
@@ -22,8 +24,9 @@ export default function Toggle({ message }: ToggleProps) {
                     {isVisible ? "Hide" : "Show"} Info
                 </button>
 
-                {/* Toggle the visibility of the p element with message when button is clicked */}
-                {isVisible && <p>{message}</p>}
+                {/* Toggle the visibility of the p element when the button is clicked */}
+                {/* Render the content of the p element with the "message" prop passed from the parent component */}
+                {isVisible && <p>{message ?? "No \"message\" prop provided in the parent component."}</p>}
 
             </div>
         </div>

@@ -5,7 +5,7 @@ import Counter from "../components/Counter";
 
 export default function Home() {
   // Initialize Variables for props
-  const messageVar = "You have passed this message props from a parent component to a child component prop message.";
+  const messageVar = "You have discovered the \"message\" props passed from the parent component to the child component.";
   const titleVar = "Current Count";
 
   return (
@@ -13,6 +13,7 @@ export default function Home() {
 
       {/* Navigation Menu */}
       <NavBar />
+      <br/>
 
       {/* Toggle Component */}
       <Toggle message={messageVar} />
