@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from "../styles/Counter.module.css";
 
 // Define the type for props
