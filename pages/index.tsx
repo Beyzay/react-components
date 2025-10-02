@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import Toggle from "../components/Toggle";
 import Counter from "../components/Counter";
 import Contact from "../components/Contact";
+import WelcomeHome from "../components/WelcomeHome";
 
 export default function Home() {
   // Initialize Variables for props
@@ -15,6 +16,12 @@ export default function Home() {
       {/* Navigation Menu */}
       <div id="navbar">
         <NavBar />
+      </div>
+      <br/>
+
+      {/* WelcomeHome Component */}
+      <div id="home">
+        <WelcomeHome />
       </div>
       <br/>
 

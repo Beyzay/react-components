@@ -1,0 +1,13 @@
+.flexContainer {
+    display:flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1 {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #00ced1;
+}
