@@ -14,28 +14,26 @@ export default function Home() {
     <div>
 
       {/* Navigation Menu */}
-      <div id="navbar">
-        <NavBar />
-      </div>
+      <NavBar />
 
       <main style={{ padding: "1.5rem" }}>
         {/* WelcomeHome Component */}
-        <div id="home" style={{ marginBottom: "3rem" }}>
+        <div id="home" style={{ marginBottom: "3rem", scrollMarginTop: "5rem" }}>
           <WelcomeHome />
         </div>
 
         {/* Toggle Component */}
-        <div id="toggle" style={{ marginBottom: "3rem" }}>
+        <div id="toggle" style={{ marginBottom: "3rem", scrollMarginTop: "5rem" }}>
           <Toggle message={messageVar} />
         </div>
         
         {/* Counter Component */}
-        <div id="counter" style={{ marginBottom: "3rem" }}>
+        <div id="counter" style={{ marginBottom: "3rem", scrollMarginTop: "5rem"  }}>
           <Counter title={titleVar}/>
         </div>
 
         {/* Contact Component */}
-        <div id="contact" style={{ marginBottom: "3rem" }}>
+        <div id="contact" style={{ marginBottom: "3rem", scrollMarginTop: "5rem"  }}>
           <Contact />
         </div>
       </main>
