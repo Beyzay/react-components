@@ -13,15 +13,21 @@ export default function Home() {
     <div>
 
       {/* Navigation Menu */}
-      <NavBar />
+      <div id="navbar">
+        <NavBar />
+      </div>
       <br/>
 
       {/* Toggle Component */}
-      <Toggle message={messageVar} />
+      <div id="toggle">
+        <Toggle message={messageVar} />
+      </div>
       <br/>
       
       {/* Counter Component */}
-      <Counter title={titleVar}/>
+      <div id="counter">
+        <Counter title={titleVar}/>
+      </div>
       <br/>
 
       {/* Contact Component */}
